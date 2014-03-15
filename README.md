@@ -20,7 +20,7 @@ Dependancies
 Example Usage
 -------------
 
-Imprt the core simulation code:
+Import the core simulation code:
 
     import nanosim
   
