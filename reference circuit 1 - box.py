@@ -1,5 +1,5 @@
 import nanosim
-from analysis import characterise, plot_circuit, nanosim, dynamic_analysis
+from analysis import characterise, plot_circuit, dynamic_analysis
 import numpy as np
 from scipy import interpolate
 

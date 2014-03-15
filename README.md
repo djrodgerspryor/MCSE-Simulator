@@ -46,7 +46,7 @@ Simulate:
 
 You'll probably want to collect data from your simulation and characterise your circuit under different conditions. For that, use the analysis library:
 
-    from analysis import characterise, plot_circuit, nanosim, dynamic_analysis
+    from analysis import characterise, plot_circuit, dynamic_analysis
 
 Static voltage-characterisation (of island) under varying input voltage (on drain):
 
