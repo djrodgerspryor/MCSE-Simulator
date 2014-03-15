@@ -53,7 +53,7 @@ Static voltage-characterisation (of island) under varying input voltage (on drai
     characterise(runtime, inputs = [drain], input_ranges = [(0, Vd)], v_probes = [island], repetitions = 5)
   
 `characterise` can handle up to two input voltage nodes (due to plotting limitations).
-`plot\_circuit` can be used to visually check your component connections.
+`plot_circuit` can be used to visually check your component connections.
 
 
 See the reference files for functional example code and demonstrations of dynamic analysis.
