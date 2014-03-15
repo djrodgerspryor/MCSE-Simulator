@@ -34,9 +34,3 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
-Weight Adder.py
-weight_switch.py
-tucker_inverter.py
-old/
-images/
-weight_sum.py
