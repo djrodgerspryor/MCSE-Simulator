@@ -6,7 +6,7 @@ from analysis import dynamic_analysis, characterise
 
 nanosim.initialise(temp = 0.025)
 
-runtime = 1.0 * 10**-8
+runtime = 1.0 * 10**-7
 
 C = 1.0 * nanosim.aF # attofarads
 R = 20 * nanosim.Rk
@@ -39,14 +39,5 @@ def set_connections():
     
 set_connections()
 
-'''
-runtime = 1 # Seconds
-def get_v(t):
-    v = Vd * float(t)/runtime
-    return v
-drain.set_V(get_v)
-
-#dynamic_analysis(runtime, v_probes = [island, drain], i_probes = [ground], v_diffs = [(drain, island)], repetitions = 10, raw_data = False)
-'''
-
-characterise(runtime, inputs = [gate, drain], input_ranges = [(0, Vg), (-Vs, Vs)], steps = 20, v_probes = [island], i_probes = [drain], q_probes = [island], repetitions = 2, mean_data = 0, variance = True) #, v_diffs = [(drain, ground)]
+# Static analysis
+characterise(runtime, inputs = [gate, drain], input_ranges = [(0, Vg), (-Vs, Vs)], steps = 50, v_probes = [island], i_probes = [drain], q_probes = [island], repetitions = 2, mean_data = 0, variance = True) #, v_diffs = [(drain, ground)]
