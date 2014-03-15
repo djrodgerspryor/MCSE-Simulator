@@ -65,6 +65,7 @@ Notes
 * nanosim.py currently uses global variables, making multiple, simultaneous simulations impossible.
 * Static analysis sweeps voltage both forwards and backwards to detect hysteresis effects. The two datasets are plotted with similar (but distinct) colours on 1D plots, and distinct colours for 2D plots (where there is only one dataset per plot). If you're seeing these two datasets diverge, then you're getting hysteresis effects and need to increase your runtime to allow better thermalisation (ie. to make each step effectivley equivilent to DC analysis).
 * There are interfaces in the analysis functions for passing your own plot objects (axes and figure) and stopping the functions from drawing - this lets you take more control over the output is you want to do something fancy.
+* Electron tunnelling is instantaneous in the Monte-Carlo model, thus, the scale of currents measured in dynamic analysis (where individual events rather than time averages are recorded) is arbitrary.
 
 
 
