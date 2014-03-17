@@ -42,7 +42,7 @@ A coupling with no specified resistance is taken to be purely capacitative (mean
   
 Simulate:
 
-    nanosim.simulate(runtime)`
+    nanosim.simulate(runtime)
 
 You'll probably want to collect data from your simulation and characterise your circuit under different conditions. For that, use the analysis library:
 
